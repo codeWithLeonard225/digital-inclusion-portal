@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Inclusive employment opportunities and career resources for persons with disabilities.">
+    <title>Job Opportunities - Digital Inclusion Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/accessibility.css">
+</head>
+
+<body>
+
+    <!-- Accessibility Toolbar -->
+    <div class="accessibility-bar">
+        <div class="accessibility-container">
+            <span class="accessibility-title">Accessibility:</span>
+            <button type="button" id="decreaseFont" aria-label="Decrease text size">A−</button>
+            <button type="button" id="increaseFont" aria-label="Increase text size">A+</button>
+            <button type="button" id="readAloud" aria-label="Read page aloud">🔊 Read Aloud</button>
+            <button type="button" id="stopReading" aria-label="Stop reading">■ Stop</button>
+            <button type="button" id="highContrast" aria-label="Enable high contrast mode">High Contrast</button>
+            <button type="button" id="resetAccessibility">Reset</button>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="main-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="index.html" class="logo" aria-label="Digital Inclusion Portal Home">
+                <span class="logo-icon">♿</span>
+                <span>Digital Inclusion Portal</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
+                ☰
+            </button>
+
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="resources.html">Learning</a>
+                <a href="jobs.html" class="active">Jobs</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#contact">Contact</a>
+                <a href="login.html" class="login-btn">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Banner -->
+        <section class="hero" style="padding: 3rem 1rem;">
+            <div class="hero-content" style="grid-template-columns: 1fr;">
+                <div class="hero-text">
+                    <span class="hero-label">💼 INCLUSIVE EMPLOYMENT</span>
+                    <h1>Career <span>Opportunities</span></h1>
+                    <p>Connect with accessible employers offering remote and local job opportunities designed around inclusivity.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Job Listings -->
+        <section class="features" style="padding-top: 2rem;">
+            <div class="section-heading">
+                <h2>Featured Openings</h2>
+                <p>All listings are vetted for inclusive workplace accommodations.</p>
+            </div>
+
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <div class="feature-icon">🎧</div>
+                    <span class="card-number">Remote</span>
+                    <h3>Customer Support Specialist</h3>
+                    <p>Provide assisted chat and phone support for digital products. Flexible hours available.</p>
+                    <a href="login.html">Apply Now <span>→</span></a>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">🖥️</div>
+                    <span class="card-number">Hybrid</span>
+                    <h3>Data Entry Assistant</h3>
+                    <p>Process and verify administrative digital records with screen-reader friendly tooling.</p>
+                    <a href="login.html">Apply Now <span>→</span></a>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">✍️</div>
+                    <span class="card-number">Remote</span>
+                    <h3>Content Accessibility Tester</h3>
+                    <p>Evaluate online web tools and document formats to ensure full WCAG accessibility compliance.</p>
+                    <a href="login.html">Apply Now <span>→</span></a>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <span class="card-number">Remote</span>
+                    <h3>Junior Graphic Designer</h3>
+                    <p>Create visual digital content, social media graphics, and accessible marketing collateral.</p>
+                    <a href="login.html">Apply Now <span>→</span></a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <h3>Digital Inclusion Portal</h3>
+                <p>Making digital information and opportunities easier to access.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="resources.html">Learning</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="login.html">Login</a>
+            </div>
+            <div>
+                <h4>Accessibility</h4>
+                <p>Designed with accessibility and inclusive digital access in mind.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Digital Inclusion Portal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/accessibility.js"></script>
+</body>
+
+</html>

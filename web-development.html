@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web Development Fundamentals learning resources.">
+    <title>Web Development Fundamentals - Digital Inclusion Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/accessibility.css">
+</head>
+
+<body>
+
+    <!-- Accessibility Toolbar -->
+    <div class="accessibility-bar">
+        <div class="accessibility-container">
+            <span class="accessibility-title">Accessibility:</span>
+            <button type="button" id="decreaseFont" aria-label="Decrease text size">A−</button>
+            <button type="button" id="increaseFont" aria-label="Increase text size">A+</button>
+            <button type="button" id="readAloud" aria-label="Read page aloud">🔊 Read Aloud</button>
+            <button type="button" id="stopReading" aria-label="Stop reading">■ Stop</button>
+            <button type="button" id="highContrast" aria-label="Enable high contrast mode">High Contrast</button>
+            <button type="button" id="resetAccessibility">Reset</button>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="main-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="index.html" class="logo" aria-label="Digital Inclusion Portal Home">
+                <span class="logo-icon" aria-hidden="true">♿</span>
+                <span>Digital Inclusion Portal</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu"
+                aria-expanded="false" aria-controls="navLinks">
+                ☰
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="resources.html" class="active">Learning</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#contact">Contact</a>
+                <a href="login.html" class="login-btn">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Course Header -->
+        <section class="hero" style="padding: 2.5rem 1rem;">
+            <div class="hero-content" style="grid-template-columns: 1fr;">
+                <div class="hero-text">
+                    <a href="resources.html" style="text-decoration: none; color: inherit; font-weight: bold;">← Back to
+                        Learning Resources</a>
+                    <h1 style="margin-top: 1rem;">Web Development <span>Fundamentals</span></h1>
+                    <p>Build accessible, responsive websites using semantic HTML, CSS, and ARIA markup.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lessons Container -->
+        <section style="max-width: 900px; margin: 0 auto; padding: 2rem 1rem;">
+
+            <article
+                style="background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem;">
+
+                <h2>Lesson 1: HTML Basics</h2>
+
+                <p>
+                    HTML (HyperText Markup Language) provides the structure
+                    of web pages.
+                </p>
+
+                <ul style="margin: 1rem 0 0 1.5rem;">
+
+                    <li>
+                        Use semantic elements such as
+                        <code>&lt;header&gt;</code>,
+                        <code>&lt;nav&gt;</code>,
+                        <code>&lt;main&gt;</code> and
+                        <code>&lt;footer&gt;</code>.
+                    </li>
+
+                    <li>
+                        Use headings in a logical order.
+                    </li>
+
+                    <li>
+                        Use descriptive links.
+                    </li>
+
+                    <li>
+                        Add labels to form fields.
+                    </li>
+
+                </ul>
+
+            </article>
+
+            <article
+                style="background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem;">
+                <h2>Lesson 2: Styling with CSS</h2>
+                <p>CSS (Cascading Style Sheets) designs layout, typography, and color. Ensure adequate color contrast
+                    (at least 4.5:1 ratio for standard text) so content is legible for low-vision users.</p>
+            </article>
+
+            <article
+                style="background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem;">
+                <h2>Lesson 3: Accessible Web Design</h2>
+                <p>Accessible web design ensures people with diverse abilities can read, interact with, and navigate
+                    websites. Always include image <code>alt</code> attributes, explicit form <code>&lt;label&gt;</code>
+                    tags, and clear focus indicators.</p>
+            </article>
+
+            <article style="background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.5rem;">
+
+                <h2>Lesson 4: Understanding ARIA</h2>
+
+                <p>
+                    WAI-ARIA (Accessible Rich Internet Applications)
+                    provides additional information to assistive
+                    technologies when standard HTML is not sufficient.
+                </p>
+
+                <ul style="margin: 1rem 0 0 1.5rem;">
+
+                    <li>
+                        <code>aria-label</code> provides an accessible name.
+                    </li>
+
+                    <li>
+                        <code>aria-expanded</code> indicates whether
+                        a control is expanded or collapsed.
+                    </li>
+
+                    <li>
+                        <code>aria-live</code> can announce dynamic
+                        content changes.
+                    </li>
+
+                </ul>
+
+            </article>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <h3>Digital Inclusion Portal</h3>
+                <p>Making digital information and opportunities easier to access.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="resources.html">Learning</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="login.html">Login</a>
+            </div>
+            <div>
+                <h4>Accessibility</h4>
+                <p>Designed with accessibility and inclusive digital access in mind.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Digital Inclusion Portal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/accessibility.js"></script>
+</body>
+
+</html>

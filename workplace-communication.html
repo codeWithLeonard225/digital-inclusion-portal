@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Workplace Communications learning materials.">
+    <title>Workplace Communications - Digital Inclusion Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/accessibility.css">
+</head>
+
+<body>
+
+    <!-- Accessibility Toolbar -->
+    <div class="accessibility-bar">
+        <div class="accessibility-container">
+            <span class="accessibility-title">Accessibility:</span>
+            <button type="button" id="decreaseFont" aria-label="Decrease text size">A−</button>
+            <button type="button" id="increaseFont" aria-label="Increase text size">A+</button>
+            <button type="button" id="readAloud" aria-label="Read page aloud">🔊 Read Aloud</button>
+            <button type="button" id="stopReading" aria-label="Stop reading">■ Stop</button>
+            <button type="button" id="highContrast" aria-label="Enable high contrast mode">High Contrast</button>
+            <button type="button" id="resetAccessibility">Reset</button>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="main-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="index.html" class="logo" aria-label="Digital Inclusion Portal Home">
+                <span class="logo-icon" aria-hidden="true">♿</span>
+                <span>Digital Inclusion Portal</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu"
+                aria-expanded="false" aria-controls="navLinks">
+                ☰
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="resources.html" class="active">Learning</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#contact">Contact</a>
+                <a href="login.html" class="login-btn">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Course Header -->
+        <section class="hero" style="padding: 2.5rem 1rem;">
+            <div class="hero-content" style="grid-template-columns: 1fr;">
+                <div class="hero-text">
+                    <a href="resources.html" style="text-decoration: none; color: inherit; font-weight: bold;">← Back to
+                        Learning Resources</a>
+                    <h1 style="margin-top: 1rem;">Workplace <span>Communications</span></h1>
+                    <p>Develop professional writing habits, document processing skills, and online meeting etiquette.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lessons Container -->
+        <section style="max-width: 900px; margin: 0 auto; padding: 2rem 1rem;">
+
+            <article
+                style="background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem;">
+                <h2>Lesson 1: Email Etiquette</h2>
+                <p>Professional emails require clear subject lines, respectful greetings, concise message bodies, and
+                    structured signatures. Always proofread before sending.</p>
+            </article>
+
+            <article
+                style="background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem;">
+                <h2>Lesson 2: Professional Communication</h2>
+                <p>Clear communication builds trust in remote and in-office teams. Focus on active listening, timely
+                    responses, and concise updates during ongoing projects.</p>
+            </article>
+
+            <article
+                style="background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem;">
+
+                <h2>Lesson 3: Creating Accessible Documents</h2>
+
+                <p>
+                    When creating Word documents, PDFs, presentations,
+                    or other digital documents, make sure they can be
+                    easily understood and accessed by people with different
+                    abilities.
+                </p>
+
+                <ul style="margin: 1rem 0 0 1.5rem;">
+
+                    <li>
+                        Use clear headings and proper document structure.
+                    </li>
+
+                    <li>
+                        Use readable font sizes and good colour contrast.
+                    </li>
+
+                    <li>
+                        Add alternative text to meaningful images.
+                    </li>
+
+                    <li>
+                        Use descriptive link text instead of "click here".
+                    </li>
+
+                    <li>
+                        Make sure the document can be navigated using a keyboard.
+                    </li>
+
+                </ul>
+
+            </article>
+
+            <article style="background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.5rem;">
+                <h2>Lesson 4: Online Meetings</h2>
+                <p>When participating in video calls (Zoom, Microsoft Teams, Google Meet), join on time, keep your
+                    microphone muted when not speaking, and use chat tools appropriately.</p>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <h3>Digital Inclusion Portal</h3>
+                <p>Making digital information and opportunities easier to access.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="resources.html">Learning</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="login.html">Login</a>
+            </div>
+            <div>
+                <h4>Accessibility</h4>
+                <p>Designed with accessibility and inclusive digital access in mind.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Digital Inclusion Portal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/accessibility.js"></script>
+</body>
+
+</html>

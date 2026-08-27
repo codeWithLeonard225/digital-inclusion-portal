@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Digital Literacy Basics learning resources and lessons.">
+    <title>Digital Literacy Basics - Digital Inclusion Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/accessibility.css">
+</head>
+
+<body>
+
+    <!-- Accessibility Toolbar -->
+    <div class="accessibility-bar">
+        <div class="accessibility-container">
+            <span class="accessibility-title">Accessibility:</span>
+            <button type="button" id="decreaseFont" aria-label="Decrease text size">A−</button>
+            <button type="button" id="increaseFont" aria-label="Increase text size">A+</button>
+            <button type="button" id="readAloud" aria-label="Read page aloud">🔊 Read Aloud</button>
+            <button type="button" id="stopReading" aria-label="Stop reading">■ Stop</button>
+            <button type="button" id="highContrast" aria-label="Enable high contrast mode">High Contrast</button>
+            <button type="button" id="resetAccessibility">Reset</button>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="main-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="index.html" class="logo" aria-label="Digital Inclusion Portal Home">
+                <span class="logo-icon" aria-hidden="true">♿</span>
+                <span>Digital Inclusion Portal</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu"
+                aria-expanded="false" aria-controls="navLinks">
+                ☰
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="resources.html" class="active">Learning</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#contact">Contact</a>
+                <a href="login.html" class="login-btn">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Course Header -->
+        <section class="hero" style="padding: 2.5rem 1rem;">
+            <div class="hero-content" style="grid-template-columns: 1fr;">
+                <div class="hero-text">
+                    <a href="resources.html" style="text-decoration: none; color: inherit; font-weight: bold;">← Back to
+                        Learning Resources</a>
+                    <h1 style="margin-top: 1rem;">Digital Literacy <span>Basics</span></h1>
+                    <p>Master essential computer hardware, desktop navigation, web browsing, and personal online safety.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lessons Container -->
+        <section style="max-width: 900px; margin: 0 auto; padding: 2rem 1rem;">
+
+            <article
+                style="background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem;">
+                <h2>Lesson 1: Introduction to Computers</h2>
+                <p>A computer is an electronic device that processes data, converting raw inputs into useful
+                    information. It consists of hardware (physical parts like the CPU, monitor, keyboard, and storage)
+                    and software (programs and operating systems like Windows or Linux).</p>
+                <ul>
+                    <li>
+                        <strong>Central Processing Unit (CPU):</strong>
+                        The brain of the computer that executes instructions.
+                    </li>
+
+                    <li>
+                        <strong>RAM (Memory):</strong>
+                        Temporary workspace used for running programs quickly.
+                    </li>
+
+                    <li>
+                        <strong>Storage Drive (SSD/HDD):</strong>
+                        Long-term storage where your files and operating system live.
+                    </li>
+                </ul>
+            </article>
+
+            <article
+                style="background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem;">
+                <h2>Lesson 2: Keyboard & Mouse Navigation</h2>
+                <p>Interacting with your computer efficiently requires mastering pointing and typing devices:</p>
+                <ul style="margin: 1rem 0 0 1.5rem;">
+
+                    <li>
+                        <strong>Left-Click:</strong>
+                        Selects items or opens buttons.
+                    </li>
+
+                    <li>
+                        <strong>Right-Click:</strong>
+                        Opens contextual menus with extra options.
+                    </li>
+
+                    <li>
+                        <strong>Tab Key:</strong>
+                        Navigates sequentially through clickable items
+                        on web pages and windows.
+                    </li>
+
+                    <li>
+                        <strong>Enter Key:</strong>
+                        Triggers selected links, submits forms,
+                        or creates new lines of text.
+                    </li>
+
+                </ul>
+            </article>
+
+            <article
+                style="background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem;">
+                <h2>Lesson 3: Understanding the Internet</h2>
+                <p>The Internet is a global network connecting millions of devices worldwide. Web pages are accessed
+                    using a web browser (like Chrome, Firefox, or Edge) by typing a URL (Uniform Resource Locator) into
+                    the address bar.</p>
+            </article>
+
+            <article style="background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.5rem;">
+                <h2>Lesson 4: Internet Safety</h2>
+                <p>Protecting your personal information online is critical:</p>
+                <ul style="margin: 1rem 0 0 1.5rem;">
+
+                    <li>
+                        Use strong, unique passwords containing
+                        letters, numbers, and symbols.
+                    </li>
+
+                    <li>
+                        Never share personal financial information
+                        or passwords over unencrypted channels.
+                    </li>
+
+                    <li>
+                        Be cautious of suspicious emails asking you
+                        to click unknown links (phishing).
+                    </li>
+
+                </ul>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <h3>Digital Inclusion Portal</h3>
+                <p>Making digital information and opportunities easier to access.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="resources.html">Learning</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="login.html">Login</a>
+            </div>
+            <div>
+                <h4>Accessibility</h4>
+                <p>Designed with accessibility and inclusive digital access in mind.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Digital Inclusion Portal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/accessibility.js"></script>
+</body>
+
+</html>

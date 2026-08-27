@@ -1,0 +1,83 @@
+/* ================================
+   ACCESSIBILITY & HIGH CONTRAST MODE
+================================ */
+
+/* High Contrast Global Overrides */
+body.high-contrast {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+body.high-contrast .accessibility-toolbar {
+    background-color: #000000 !important;
+    border-bottom: 2px solid #ffffff !important;
+}
+
+body.high-contrast .accessibility-toolbar button {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    border: 2px solid #ffffff !important;
+}
+
+body.high-contrast .accessibility-toolbar button:hover {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+body.high-contrast .main-header,
+body.high-contrast .hero,
+body.high-contrast .feature-card,
+body.high-contrast .cta,
+body.high-contrast .footer {
+    background: #000000 !important;
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+}
+
+body.high-contrast .hero h1,
+body.high-contrast .hero p,
+body.high-contrast .section-heading h2,
+body.high-contrast .section-heading p,
+body.high-contrast .feature-card h3,
+body.high-contrast .feature-card p,
+body.high-contrast .cta h2,
+body.high-contrast .cta p,
+body.high-contrast .footer p {
+    color: #ffffff !important;
+}
+
+body.high-contrast .feature-card {
+    border: 2px solid #ffffff !important;
+}
+
+body.high-contrast a,
+body.high-contrast .card-link,
+body.high-contrast .logo {
+    color: #ffff00 !important; /* Vivid yellow for contrast */
+}
+
+body.high-contrast .btn-primary,
+body.high-contrast .btn-secondary,
+body.high-contrast .btn-outline {
+    background-color: #000000 !important;
+    color: #ffff00 !important;
+    border: 2px solid #ffff00 !important;
+}
+
+body.high-contrast .btn-primary:hover,
+body.high-contrast .btn-secondary:hover,
+body.high-contrast .btn-outline:hover {
+    background-color: #ffff00 !important;
+    color: #000000 !important;
+}
+
+/* Global Focus Indicators for Accessibility Keyboard Users */
+:focus-visible {
+    outline: 3px solid #166534 !important;
+    outline-offset: 3px !important;
+}
+
+body.high-contrast :focus-visible {
+    outline: 3px solid #ffff00 !important;
+    outline-offset: 3px !important;
+}

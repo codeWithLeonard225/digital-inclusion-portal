@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Assistive Technology guides and learning resources.">
+    <title>Assistive Technology Guide - Digital Inclusion Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/accessibility.css">
+</head>
+
+<body>
+
+    <!-- Accessibility Toolbar -->
+    <div class="accessibility-bar">
+        <div class="accessibility-container">
+            <span class="accessibility-title">Accessibility:</span>
+            <button type="button" id="decreaseFont" aria-label="Decrease text size">A−</button>
+            <button type="button" id="increaseFont" aria-label="Increase text size">A+</button>
+            <button type="button" id="readAloud" aria-label="Read page aloud">🔊 Read Aloud</button>
+            <button type="button" id="stopReading" aria-label="Stop reading">■ Stop</button>
+            <button type="button" id="highContrast" aria-label="Enable high contrast mode">High Contrast</button>
+            <button type="button" id="resetAccessibility">Reset</button>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="main-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="index.html" class="logo" aria-label="Digital Inclusion Portal Home">
+                <span class="logo-icon" aria-hidden="true">♿</span>
+                <span>Digital Inclusion Portal</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu"
+                aria-expanded="false" aria-controls="navLinks">
+                ☰
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="resources.html" class="active">Learning</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#contact">Contact</a>
+                <a href="login.html" class="login-btn">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Course Header -->
+        <section class="hero" style="padding: 2.5rem 1rem;">
+            <div class="hero-content" style="grid-template-columns: 1fr;">
+                <div class="hero-text">
+                    <a href="resources.html" style="text-decoration: none; color: inherit; font-weight: bold;">← Back to
+                        Learning Resources</a>
+                    <h1 style="margin-top: 1rem;">Assistive Technology <span>Guide</span></h1>
+                    <p>Learn how screen readers, voice controls, and software accessibility features make technology
+                        usable for everyone.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lessons Container -->
+        <section style="max-width: 900px; margin: 0 auto; padding: 2rem 1rem;">
+
+            <article
+                    style="background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem;">
+
+                    <h2>Lesson 1: Screen Readers</h2>
+
+                    <p>
+                        Screen readers convert on-screen text into synthesized speech
+                        or Braille output for blind or visually impaired users.
+                    </p>
+
+                    <ul style="margin: 1rem 0 0 1.5rem;">
+
+                        <li>
+                            <strong>NVDA:</strong>
+                            A free and open-source screen reader for Windows.
+                        </li>
+
+                        <li>
+                            <strong>JAWS:</strong>
+                            A popular screen reader used by many computer users.
+                        </li>
+
+                        <li>
+                            <strong>VoiceOver:</strong>
+                            Apple's built-in screen reader.
+                        </li>
+
+                        <li>
+                            <strong>Windows Narrator:</strong>
+                            A screen reader included with Windows.
+                        </li>
+
+                    </ul>
+
+                </article>
+
+            <article
+                style="background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem;">
+
+                <h2>Lesson 2: Speech Recognition</h2>
+
+                <p>
+                    Speech recognition software enables users to control
+                    computers and enter text using their voice.
+                </p>
+
+                <ul style="margin: 1rem 0 0 1.5rem;">
+
+                    <li>
+                        Control the computer using voice commands.
+                    </li>
+
+                    <li>
+                        Dictate text without using a keyboard.
+                    </li>
+
+                    <li>
+                        Navigate applications using voice.
+                    </li>
+
+                    <li>
+                        Perform hands-free computer tasks.
+                    </li>
+
+                </ul>
+
+            </article>
+
+            <article
+                style="background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem;">
+                <h2>Lesson 3: Keyboard Accessibility</h2>
+                <ul style="margin: 1rem 0 0 1.5rem;">
+
+                    <li>
+                        <strong>Tab:</strong> Move forward between controls.
+                    </li>
+
+                    <li>
+                        <strong>Shift + Tab:</strong> Move backward between controls.
+                    </li>
+
+                    <li>
+                        <strong>Enter:</strong> Activate a selected link or button.
+                    </li>
+
+                    <li>
+                        <strong>Space:</strong> Activate certain buttons and controls.
+                    </li>
+
+                </ul>
+            </article>
+
+            <article style="background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.5rem;">
+                <h2>Lesson 4: Accessibility Settings</h2>
+                <p>Modern operating systems offer built-in display and motor accommodations, such as High Contrast Mode,
+                    Screen Magnifiers, Sticky Keys, and Text Resizing.</p>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <h3>Digital Inclusion Portal</h3>
+                <p>Making digital information and opportunities easier to access.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="resources.html">Learning</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="login.html">Login</a>
+            </div>
+            <div>
+                <h4>Accessibility</h4>
+                <p>Designed with accessibility and inclusive digital access in mind.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Digital Inclusion Portal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/accessibility.js"></script>
+</body>
+
+</html>
