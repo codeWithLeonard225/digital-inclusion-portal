@@ -1,29 +1,33 @@
-/* ================================
+/* =================================
    ACCESSIBILITY & HIGH CONTRAST MODE
-================================ */
+================================= */
 
 /* High Contrast Global Overrides */
+
 body.high-contrast {
     background-color: #000000 !important;
     color: #ffffff !important;
 }
 
-body.high-contrast .accessibility-toolbar {
+/* Accessibility Bar */
+body.high-contrast .accessibility-bar {
     background-color: #000000 !important;
     border-bottom: 2px solid #ffffff !important;
+    color: #ffffff !important;
 }
 
-body.high-contrast .accessibility-toolbar button {
+body.high-contrast .accessibility-bar button {
     background-color: #000000 !important;
     color: #ffffff !important;
     border: 2px solid #ffffff !important;
 }
 
-body.high-contrast .accessibility-toolbar button:hover {
+body.high-contrast .accessibility-bar button:hover {
     background-color: #ffffff !important;
     color: #000000 !important;
 }
 
+/* Header, Hero, Cards, CTA and Footer */
 body.high-contrast .main-header,
 body.high-contrast .hero,
 body.high-contrast .feature-card,
@@ -34,6 +38,7 @@ body.high-contrast .footer {
     border-color: #ffffff !important;
 }
 
+/* Text */
 body.high-contrast .hero h1,
 body.high-contrast .hero p,
 body.high-contrast .section-heading h2,
@@ -46,32 +51,78 @@ body.high-contrast .footer p {
     color: #ffffff !important;
 }
 
+/* Feature Cards */
 body.high-contrast .feature-card {
     border: 2px solid #ffffff !important;
 }
 
+/* Links */
 body.high-contrast a,
 body.high-contrast .card-link,
 body.high-contrast .logo {
-    color: #ffff00 !important; /* Vivid yellow for contrast */
+    color: #ffff00 !important;
 }
 
-body.high-contrast .btn-primary,
-body.high-contrast .btn-secondary,
-body.high-contrast .btn-outline {
+/* Primary and Secondary Buttons */
+body.high-contrast .primary-btn,
+body.high-contrast .secondary-btn,
+body.high-contrast .btn {
     background-color: #000000 !important;
     color: #ffff00 !important;
     border: 2px solid #ffff00 !important;
 }
 
-body.high-contrast .btn-primary:hover,
-body.high-contrast .btn-secondary:hover,
-body.high-contrast .btn-outline:hover {
+body.high-contrast .primary-btn:hover,
+body.high-contrast .secondary-btn:hover,
+body.high-contrast .btn:hover {
     background-color: #ffff00 !important;
     color: #000000 !important;
 }
 
-/* Global Focus Indicators for Accessibility Keyboard Users */
+/* Accessibility Card */
+body.high-contrast .accessibility-card {
+    background: #000000 !important;
+    color: #ffffff !important;
+    border: 2px solid #ffffff !important;
+}
+
+body.high-contrast .accessibility-card h2,
+body.high-contrast .accessibility-card p,
+body.high-contrast .accessibility-card span {
+    color: #ffffff !important;
+}
+
+/* Stats Section */
+body.high-contrast .stats {
+    background: #000000 !important;
+    color: #ffffff !important;
+}
+
+body.high-contrast .stat-item {
+    color: #ffffff !important;
+}
+
+body.high-contrast .stat-number,
+body.high-contrast .stat-label {
+    color: #ffffff !important;
+}
+
+/* About and Contact Sections */
+body.high-contrast .about-section,
+body.high-contrast .contact-section {
+    background: #000000 !important;
+    color: #ffffff !important;
+}
+
+body.high-contrast .about-section h2,
+body.high-contrast .about-section p,
+body.high-contrast .contact-section h2,
+body.high-contrast .contact-section p {
+    color: #ffffff !important;
+}
+
+/* Global Focus Indicators for Keyboard Users */
+
 :focus-visible {
     outline: 3px solid #166534 !important;
     outline-offset: 3px !important;

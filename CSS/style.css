@@ -1,6 +1,8 @@
+
 /* ================================
    RESET & BASE STYLES
 ================================ */
+
 * {
     margin: 0;
     padding: 0;
@@ -34,9 +36,11 @@ section {
     padding: 60px 20px;
 }
 
+
 /* ================================
    ACCESSIBILITY BAR & SKIP LINK
 ================================ */
+
 .skip-link {
     position: fixed;
     top: -100px;
@@ -86,9 +90,11 @@ section {
     background: #4b5563;
 }
 
+
 /* ================================
    HEADER & NAVIGATION
 ================================ */
+
 .main-header {
     background: #ffffff;
     border-bottom: 1px solid #e5e7eb;
@@ -128,7 +134,7 @@ section {
 }
 
 .menu-toggle {
-    display: none; /* Hidden on desktop */
+    display: none;
     font-size: 26px;
     color: #111827;
 }
@@ -161,9 +167,11 @@ section {
     background: #14532d;
 }
 
+
 /* ================================
    HERO SECTION
 ================================ */
+
 .hero {
     background: linear-gradient(135deg, #166534, #0f4021);
     color: #ffffff;
@@ -221,6 +229,10 @@ section {
     border-radius: 8px;
     font-weight: bold;
     transition: background 0.2s, transform 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
 }
 
 .primary-btn {
@@ -295,9 +307,11 @@ section {
     font-size: 12px;
 }
 
+
 /* ================================
    STATS SECTION
 ================================ */
+
 .stats {
     background: #ffffff;
     border-bottom: 1px solid #e5e7eb;
@@ -332,9 +346,11 @@ section {
     font-size: 14px;
 }
 
+
 /* ================================
    FEATURES SECTION
 ================================ */
+
 .features {
     max-width: 1200px;
     margin: 0 auto;
@@ -427,9 +443,11 @@ section {
     transform: translateX(4px);
 }
 
+
 /* ================================
    ABOUT SECTION
 ================================ */
+
 .about-section {
     background: #f9fafb;
 }
@@ -485,9 +503,11 @@ section {
     margin-bottom: 15px;
 }
 
+
 /* ================================
    CALL TO ACTION & CONTACT
 ================================ */
+
 .cta {
     background: #111827;
     color: #ffffff;
@@ -533,9 +553,11 @@ section {
     margin-bottom: 10px;
 }
 
+
 /* ================================
    FOOTER
 ================================ */
+
 .footer {
     background: #0f172a;
     color: #94a3b8;
@@ -575,12 +597,15 @@ section {
     font-size: 14px;
 }
 
+
 /* ================================
    RESPONSIVE MEDIA QUERIES
 ================================ */
 
 /* Tablet Screens (1024px and below) */
+
 @media (max-width: 1024px) {
+
     .hero-content,
     .about-container {
         grid-template-columns: 1fr;
@@ -602,14 +627,17 @@ section {
     }
 }
 
+
 /* Mobile Screens (768px and below) */
+
 @media (max-width: 768px) {
+
     .menu-toggle {
-        display: block; /* Show hamburger button */
+        display: block;
     }
 
     .nav-links {
-        display: none; /* Hide menu items by default */
+        display: none;
         position: absolute;
         top: 100%;
         left: 0;
@@ -622,7 +650,6 @@ section {
         gap: 15px;
     }
 
-    /* Class added via JS when menu button is clicked */
     .nav-links.active {
         display: flex;
     }
@@ -665,8 +692,11 @@ section {
     }
 }
 
+
 /* Small Mobile Screens (480px and below) */
+
 @media (max-width: 480px) {
+
     .stats-container {
         grid-template-columns: 1fr;
     }
@@ -682,4 +712,148 @@ section {
     .accessibility-features {
         grid-template-columns: 1fr;
     }
+}
+
+
+/* ================================
+   ACCESSIBILITY & HIGH CONTRAST MODE
+================================ */
+
+/* High Contrast Global Overrides */
+
+body.high-contrast {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+body.high-contrast .accessibility-bar {
+    background-color: #000000 !important;
+    border-bottom: 2px solid #ffffff !important;
+}
+
+body.high-contrast .accessibility-bar button {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    border: 2px solid #ffffff !important;
+}
+
+body.high-contrast .accessibility-bar button:hover {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+body.high-contrast .main-header,
+body.high-contrast .hero,
+body.high-contrast .feature-card,
+body.high-contrast .cta,
+body.high-contrast .footer {
+    background: #000000 !important;
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+}
+
+body.high-contrast .stats,
+body.high-contrast .about-section,
+body.high-contrast .contact-section,
+body.high-contrast .about-panel,
+body.high-contrast .contact-card {
+    background: #000000 !important;
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+}
+
+body.high-contrast .hero h1,
+body.high-contrast .hero p,
+body.high-contrast .section-heading h2,
+body.high-contrast .section-heading p,
+body.high-contrast .feature-card h3,
+body.high-contrast .feature-card p,
+body.high-contrast .cta h2,
+body.high-contrast .cta p,
+body.high-contrast .footer p,
+body.high-contrast .about-content h2,
+body.high-contrast .about-content p,
+body.high-contrast .about-points div,
+body.high-contrast .about-panel h3,
+body.high-contrast .about-panel p,
+body.high-contrast .contact-card h3,
+body.high-contrast .contact-card p,
+body.high-contrast .stat-item span {
+    color: #ffffff !important;
+}
+
+body.high-contrast .feature-card {
+    border: 2px solid #ffffff !important;
+}
+
+body.high-contrast .stat-item {
+    border-color: #ffffff !important;
+}
+
+body.high-contrast a,
+body.high-contrast .card-link,
+body.high-contrast .logo {
+    color: #ffff00 !important;
+}
+
+body.high-contrast .logo-icon {
+    background: #000000 !important;
+    color: #ffff00 !important;
+    border: 2px solid #ffff00;
+}
+
+body.high-contrast .btn,
+body.high-contrast .btn-primary,
+body.high-contrast .btn-secondary,
+body.high-contrast .btn-outline,
+body.high-contrast .primary-btn,
+body.high-contrast .secondary-btn {
+    background-color: #000000 !important;
+    color: #ffff00 !important;
+    border: 2px solid #ffff00 !important;
+}
+
+body.high-contrast .btn:hover,
+body.high-contrast .btn-primary:hover,
+body.high-contrast .btn-secondary:hover,
+body.high-contrast .btn-outline:hover,
+body.high-contrast .primary-btn:hover,
+body.high-contrast .secondary-btn:hover {
+    background-color: #ffff00 !important;
+    color: #000000 !important;
+}
+
+body.high-contrast .accessibility-card {
+    background: #000000 !important;
+    border: 2px solid #ffffff !important;
+}
+
+body.high-contrast .accessibility-card p,
+body.high-contrast .hero-accessibility-note {
+    color: #ffffff !important;
+}
+
+body.high-contrast .accessibility-features span {
+    background: #000000 !important;
+    color: #ffffff !important;
+    border: 1px solid #ffffff !important;
+}
+
+body.high-contrast .card-number {
+    color: #ffffff !important;
+}
+
+
+/* ================================
+   KEYBOARD FOCUS
+================================ */
+
+:focus-visible {
+    outline: 3px solid #166534 !important;
+    outline-offset: 3px !important;
+}
+
+body.high-contrast :focus-visible {
+    outline: 3px solid #ffff00 !important;
+    outline-offset: 3px !important;
 }
